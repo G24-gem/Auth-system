@@ -31,3 +31,4 @@ const initDB = async () => {
     throw error;
   }
 };
+module.exports = { initDB };
