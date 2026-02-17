@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Secure Authentication</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Animated background with sun/moon -->
+    <div class="sky">
+        <div class="celestial-body"></div>
+        <div class="stars"></div>
+        <div class="clouds">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+        </div>
+    </div>
+
+    <!-- Time display -->
+    <div class="time-display">
+        <span id="current-time"></span>
+    </div>
+
+    <!-- Dashboard container -->
+    <div class="container">
+        <div class="dashboard-container">
+            <h1>Welcome, <span id="username">User</span>! 🎉</h1>
+            <p class="dashboard-subtitle">You are successfully logged in</p>
+            
+            <div class="dashboard-info">
+                <div class="info-card">
+                    <h3>🔐 Security Status</h3>
+                    <p>Your password is securely hashed with bcrypt (12 salt rounds)</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🌍 Session Info</h3>
+                    <p>Your session is active and secured with HTTP-only cookies</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🎨 Theme</h3>
+                    <p>Enjoying the <span id="theme-mode">day</span> mode? Watch as it transitions throughout the day!</p>
+                </div>
+            </div>
+
+            <button id="logout-btn" class="btn-secondary">
+                Logout
+            </button>
+        </div>
+    </div>
+
+    <script src="/js/theme.js"></script>
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>
