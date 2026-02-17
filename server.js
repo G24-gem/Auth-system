@@ -3,7 +3,7 @@ const session = require('express-session');
 const path = require('path');
 require('dotenv').config();
 
-const { initDB } = require('./config/database');
+const { initDB } = require('./config/database.js');
 const authRoutes = require('./routes/auth');
 const { isAuthenticated } = require('./middleware/auth');
 
